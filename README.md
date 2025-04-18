@@ -39,7 +39,11 @@ This tutorial outlines the implementation of on-premises Active Directory within
 First, we will set up a Windows Server 2022 virtual machine which will host our domain controller. Within the Azure portal, go to <b>Virtual Machines</b> --> <b>Create</b>--><b>Axure Virtual Machine</b>
 Next, create a new resource group. We will call it 'active-directory-rg'. Our VM name will be active-directory-dc. Region will be West US 2. Image will be Windows Server 2022.Size will be Standard_D2s_v3 - 2 vcpus, 8 GiB memory, Then pick a username and password. Check the licensing agreement. Go to the networking tab. Name the vnet active-directory-vnet. Click Review + Create. Our next virtual machine will be a client machine which will connect to the domain controller on Windows Server. Again select <b>Create</b> on the Virtual Machines tab. Put this vm in the same resource group. Name it 'active-directory-client'. Put it in the same region as our other vm (West US 2) the Image will be Windows 10. The size will be: Standard D2s v3 (2 vcpus, 8 GiB memory). Then pick a username and password. Check the licensing agreement. Got to the networking tab and put this vm in the same vm as the one on Windows Server that we just created. Click Review + Create. 
   <br>
+  <br>
   Now we will set the Domain Controller's NIC's Private IP address to static. Go to the Virtual Machines tab, click on active-directory-dc, <b>Networking</b> --> <b>Network Settings</b>. Click on the virtual NIC in the upper middle of the screen. Click <b>ip-config1</b>. Change to private ip setting from dynamic to static
+  <br>
+  <br>
+  For testing purposes, we will disable to Windows Firewall on active-directory-dc. Once logged into the vm. Go to the Windows Firewall by right clicking the start menu and clicking <b>Run</b>. Type wf.msc. Click <b>Windows Defender Firewall Properties</b>. Turn the firewall state to 'off' for the Domain, Private, and Public Profile tabs.
 </p>
 <br />
 
