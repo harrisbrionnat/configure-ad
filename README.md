@@ -59,6 +59,13 @@ Next, we will set active-directory-client's dns server to active-directory-dc's 
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Next, we will make active-directory-dc an actual domain controller. Once logged into the vm. We need to install Active Directory Domain Services. On the Server Manager, go to <b>Add Roles and Features</b>. Keep clicking next until you get to <b> Select Server Roles</b>. Check <b>Active Directory Domain Services</b>. Then click 'install'. 
+</p>
+<br />
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+to promote active-directory-dc to a domain controller, go to the server manager, click on the flag in the upper right hand corner. Click <b>Promote this server to a domain controller</b>. Add a new forest name it: sampledomain.com. Create a password. Click next through the prompts and install.
 </p>
 <br />
