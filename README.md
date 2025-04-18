@@ -35,8 +35,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  <b> Creating Our Virtual Machines</b>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  <b> Creating Our Virtual Machines</b> 
+First, we will set up a Windows Server 2022 virtual machine which will host our domain controller. Within the Azure portal, go to <b>Virtual Machines</b> --> <b>Create</b>--><b>Axure Virtual Machine</b>
+Next, create a new resource group. We will call it 'active-directory-rg'. Our VM name will be active-directory-dc. Region will be West US 2. Image will be Windows Server 2022.Size will be Standard_D2s_v3 - 2 vcpus, 8 GiB memory, Then pick a username and password. Check the licensing agreement. Go to the networking tab. Name the vnet active-directory-vnet. Click Review + Create. 
 </p>
 <br />
 
