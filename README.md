@@ -64,7 +64,7 @@ Go to the networking tab. Name the vnet active-directory-vnet. Click Review + Cr
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/8DriULG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 7. Next, we will make active-directory-dc an actual domain controller. Once logged into the vm. We need to install Active Directory Domain Services. On the Server Manager, go to <b>Add Roles and Features</b>. Keep clicking next until you get to <b> Select Server Roles</b>. Check <b>Active Directory Domain Services</b>. Then click 'install'. 
