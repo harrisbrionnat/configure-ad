@@ -59,7 +59,7 @@ Go to the networking tab. Name the vnet active-directory-vnet. Click Review + Cr
 <img src="https://imgur.com/l2geFfX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-6. Next, we will set active-directory-client's dns server to active-directory-dc's private IP address. On active-directory-client, go to <b>Networking</b>--> <b>Network Settings</b>. Click on the virtual nic. Go to <b>DNS Servers</b>. Then choose 'custom' and type in active-directory-dc's private ip. To test, login into active-directory-client and ping active-directory-dc's private ip address. Additionally, you can run ipconfig /all to check if the DNS Settings are the domain controller's private ip.
+6. Next, we will set active-directory-client's dns server to active-directory-dc's private IP address. On active-directory-client, go to <b>Networking</b>--> <b>Network Settings</b>. Click on the virtual nic. Go to <b>DNS Servers</b>. Then choose 'custom' and type in active-directory-dc's private ip. To test, login into active-directory-client and ping active-directory-dc's private ip address. Make sure to restart active-directory-client from the Azure Portal. You can run ipconfig /all to check if the DNS Settings are the domain controller's private ip.
 </p>
 <br />
 
