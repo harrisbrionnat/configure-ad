@@ -2,7 +2,7 @@
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
 
-<h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
+<h1>How to Install and Deploy Active Directory in the Cloud (Azure)</h1>
 This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
 
 
@@ -81,7 +81,7 @@ Go to the networking tab. Name the vnet active-directory-vnet. Click Review + Cr
 <img src="https://imgur.com/JqtkKVX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-9. Create a domain admin user within the domain controller with the newly created domain user credentials. It should looking like: DOMAIN\user and then your password. We will not create a domain admin account. Go to <b>Active Directory Users and Computers</b>. Right click <b>mydomain.com</b> and add two <b>Organizational Units</b> one will be _EMPLOYEES and the other will be _ADMINS. Create a user to put in the _ADMINS organizational unit. Right-click the OU and click <b>add</b> --><b>organizational unit</b>. Add the users first and last name along with the domain account name. We can add this user to the Domain Admins Security group by right clicking <b>Properties</b>--><b>Member of</b>--> <b>Add</b>. In the box, type 'Domain Admins' and click 'apply' and 'ok'. Now logout and log in as the domain admin.
+9. Create a domain admin user within the domain controller with the newly created domain user credentials. It should looking like: DOMAIN\user and then your password. We will now create a domain admin account. Go to <b>Active Directory Users and Computers</b>. Right click <b>mydomain.com</b> and add two <b>Organizational Units</b> one will be _EMPLOYEES and the other will be _ADMINS. Create a user to put in the _ADMINS organizational unit. Right-click the OU and click <b>add</b> --><b>organizational unit</b>. Add the users first and last name along with the domain account name. We can add this user to the Domain Admins Security group by right clicking <b>Properties</b>--><b>Member of</b>--> <b>Add</b>. In the box, type 'Domain Admins' and click 'apply' and 'ok'. Now logout and log in as the domain admin.
 </p>
 <br />
 <p>
