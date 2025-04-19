@@ -66,6 +66,13 @@ Next, we will make active-directory-dc an actual domain controller. Once logged 
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-to promote active-directory-dc to a domain controller, go to the server manager, click on the flag in the upper right hand corner. Click <b>Promote this server to a domain controller</b>. Add a new forest name it: sampledomain.com. Create a password. Click next through the prompts and install.
+to promote active-directory-dc to a domain controller, go to the server manager, click on the flag in the upper right hand corner. Click <b>Promote this server to a domain controller</b>. Add a new forest name it: sampledomain.com. Create a password. Click next through the prompts and install. The computer should automatically restart.
+</p>
+<br />
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Now, create a domain admin user within the domain controller with the newly created domain user credentials. It should looking like: DOMAIN\user and then your password. We will not create a domain admin account. Go to <b>Active Directory Users and Computers</b>. Right click <b>mydomain.com</b> and add two <b>Organizational Units</b> one will be _EMPLOYEES and the other will be _ADMINS. Create a user to put in the _ADMINS organizational unit. Right-click the OU and click <b>add</b> --><b>organizational unit</b>. Add the users first and last name along with the domain account name. We can add this user to the Domain Admins Security group by right clicking <b>Properties</b>--><b>Member of</b>--> <b>Add</b>. In the box, type 'Domain Admins' and click 'apply' and 'ok'. Now logout and log in as the domain admin.
 </p>
 <br />
