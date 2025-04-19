@@ -90,4 +90,7 @@ Go to the networking tab. Name the vnet active-directory-vnet. Click Review + Cr
 <p>
 10. Join active-directory-client to the domain. Log in to that pc and go to <b>Start</b> --><b>System</b>--><b>Rename this pc (advanced)</b>--><b>Computer Name</b>--><b></b>. Then join it to the domain mydomain.com. Verify that active-directory-client is a part of the domain by logging into the domain controller going to <b>Active Directory Users and Computers</b>--><b>mydomain.com</b>--><b>computers</b>.
 </p>
+<p>
+<img src="https://imgur.com/LgSVIrH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
 <br />
