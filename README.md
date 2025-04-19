@@ -59,7 +59,7 @@ Go to the networking tab. Name the vnet active-directory-vnet. Click Review + Cr
 <img src="https://imgur.com/l2geFfX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Next, we will set active-directory-client's dns server to active-directory-dc's private IP address. On active-directory-client, go to <b>Networking</b>--> <b>Network Settings</b>. Click on the virtual nic. Go to <b>DNS Servers</b>. Then choose 'custom' and type in active-directory-dc's private ip. To test, login into active-directory-client and ping active-directory-dc's private ip address. Additionally, you can run ipconfig /all to check if the DNS Settings are the domain controller's private ip.
+6. Next, we will set active-directory-client's dns server to active-directory-dc's private IP address. On active-directory-client, go to <b>Networking</b>--> <b>Network Settings</b>. Click on the virtual nic. Go to <b>DNS Servers</b>. Then choose 'custom' and type in active-directory-dc's private ip. To test, login into active-directory-client and ping active-directory-dc's private ip address. Additionally, you can run ipconfig /all to check if the DNS Settings are the domain controller's private ip.
 </p>
 <br />
 
@@ -67,27 +67,27 @@ Next, we will set active-directory-client's dns server to active-directory-dc's 
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Next, we will make active-directory-dc an actual domain controller. Once logged into the vm. We need to install Active Directory Domain Services. On the Server Manager, go to <b>Add Roles and Features</b>. Keep clicking next until you get to <b> Select Server Roles</b>. Check <b>Active Directory Domain Services</b>. Then click 'install'. 
+7. Next, we will make active-directory-dc an actual domain controller. Once logged into the vm. We need to install Active Directory Domain Services. On the Server Manager, go to <b>Add Roles and Features</b>. Keep clicking next until you get to <b> Select Server Roles</b>. Check <b>Active Directory Domain Services</b>. Then click 'install'. 
 </p>
 <br />
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-to promote active-directory-dc to a domain controller, go to the server manager, click on the flag in the upper right hand corner. Click <b>Promote this server to a domain controller</b>. Add a new forest name it: sampledomain.com. Create a password. Click next through the prompts and install. The computer should automatically restart.
+8. To promote active-directory-dc to a domain controller, go to the server manager, click on the flag in the upper right hand corner. Click <b>Promote this server to a domain controller</b>. Add a new forest name it: sampledomain.com. Create a password. Click next through the prompts and install. The computer should automatically restart.
 </p>
 <br />
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Now, create a domain admin user within the domain controller with the newly created domain user credentials. It should looking like: DOMAIN\user and then your password. We will not create a domain admin account. Go to <b>Active Directory Users and Computers</b>. Right click <b>mydomain.com</b> and add two <b>Organizational Units</b> one will be _EMPLOYEES and the other will be _ADMINS. Create a user to put in the _ADMINS organizational unit. Right-click the OU and click <b>add</b> --><b>organizational unit</b>. Add the users first and last name along with the domain account name. We can add this user to the Domain Admins Security group by right clicking <b>Properties</b>--><b>Member of</b>--> <b>Add</b>. In the box, type 'Domain Admins' and click 'apply' and 'ok'. Now logout and log in as the domain admin.
+9. Create a domain admin user within the domain controller with the newly created domain user credentials. It should looking like: DOMAIN\user and then your password. We will not create a domain admin account. Go to <b>Active Directory Users and Computers</b>. Right click <b>mydomain.com</b> and add two <b>Organizational Units</b> one will be _EMPLOYEES and the other will be _ADMINS. Create a user to put in the _ADMINS organizational unit. Right-click the OU and click <b>add</b> --><b>organizational unit</b>. Add the users first and last name along with the domain account name. We can add this user to the Domain Admins Security group by right clicking <b>Properties</b>--><b>Member of</b>--> <b>Add</b>. In the box, type 'Domain Admins' and click 'apply' and 'ok'. Now logout and log in as the domain admin.
 </p>
 <br />
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Now, we will join active-directory-client to the domain. Log in to that pc and go to <b>Start</b> --><b>System</b>--><b>Rename this pc (advanced)</b>--><b>Computer Name</b>--><b></b>. Then join it to the domain mydomain.com. Verify that active-directory-client is a part of the domain by logging into the domain controller going to <b>Active Directory Users and Computers</b>--><b>mydomain.com</b>--><b>computers</b>.
+10. Join active-directory-client to the domain. Log in to that pc and go to <b>Start</b> --><b>System</b>--><b>Rename this pc (advanced)</b>--><b>Computer Name</b>--><b></b>. Then join it to the domain mydomain.com. Verify that active-directory-client is a part of the domain by logging into the domain controller going to <b>Active Directory Users and Computers</b>--><b>mydomain.com</b>--><b>computers</b>.
 </p>
 <br />
