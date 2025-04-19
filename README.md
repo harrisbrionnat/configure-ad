@@ -71,7 +71,7 @@ Go to the networking tab. Name the vnet active-directory-vnet. Click Review + Cr
 </p>
 <br />
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/CicuXFZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 8. To promote active-directory-dc to a domain controller, go to the server manager, click on the flag in the upper right hand corner. Click <b>Promote this server to a domain controller</b>. Add a new forest name it: sampledomain.com. Create a password. Click next through the prompts and install. The computer should automatically restart.
