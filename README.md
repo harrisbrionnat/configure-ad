@@ -29,9 +29,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>Deployment and Configuration Steps</h2>
 
-<p>
-<img src="https://imgur.com/XrjrPji.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+
 <p>
   <b> Creating Our Virtual Machines</b> 
   <br>
@@ -41,6 +39,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
   <br>
 2. Create a new resource group. Call it 'active-directory-rg'. Our VM name will be active-directory-dc. Region will be West US 2. Image will be Windows Server 2022.Size will be Standard_D2s_v3 - 2 vcpus, 8 GiB memory, Then pick a username and password. Check the licensing agreement. 
 Go to the networking tab. Name the vnet active-directory-vnet. Click Review + Create. 
+  <p>
+<img src="https://imgur.com/XrjrPji.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
   <br>
   <br>
 3. Our next virtual machine will be a client machine which will connect to the domain controller on Windows Server. Again select <b>Create</b> on the Virtual Machines tab. Put this vm in the same resource group. Name it 'active-directory-client'. Put it in the same region as our other vm (West US 2) the Image will be Windows 10. The size will be: Standard D2s v3 (2 vcpus, 8 GiB memory). Then pick a username and password. Check the licensing agreement. Got to the networking tab and put this vm in the same vm as the one on Windows Server that we just created. Click Review + Create. 
@@ -51,10 +52,11 @@ Go to the networking tab. Name the vnet active-directory-vnet. Click Review + Cr
   <br>
 5. For testing purposes, we will disable to Windows Firewall on active-directory-dc. Once logged into the vm. Go to the Windows Firewall by right clicking the start menu and clicking <b>Run</b>. Type wf.msc. Click <b>Windows Defender Firewall Properties</b>. Turn the firewall state to 'off' for the Domain, Private, and Public Profile tabs.
 </p>
+
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/l2geFfX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Next, we will set active-directory-client's dns server to active-directory-dc's private IP address. On active-directory-client, go to <b>Networking</b>--> <b>Network Settings</b>. Click on the virtual nic. Go to <b>DNS Servers</b>. Then choose 'custom' and type in active-directory-dc's private ip. To test, login into active-directory-client and ping active-directory-dc's private ip address. Additionally, you can run ipconfig /all to check if the DNS Settings are the domain controller's private ip.
