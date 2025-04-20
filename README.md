@@ -52,7 +52,7 @@ Go to the networking tab. Name the vnet active-directory-vnet. Click Review + Cr
 4. Set the Domain Controller's NIC's Private IP address to static. Go to the Virtual Machines tab, click on active-directory-dc, <b>Networking</b> --> <b>Network Settings</b>. Click on the virtual NIC in the upper middle of the screen. Click <b>ip-config1</b>. Change to private ip setting from dynamic to static
   <br>
   <br>
-5. For testing purposes, we will disable to Windows Firewall on active-directory-dc. Once logged into the vm. Go to the Windows Firewall by right clicking the start menu and clicking <b>Run</b>. Type wf.msc. Click <b>Windows Defender Firewall Properties</b>. Turn the firewall state to 'off' for the Domain, Private, and Public Profile tabs.
+5. For testing purposes, we will disable to Windows Firewall on active-directory-dc. Once logged into the vm, go to the Windows Firewall by right clicking the start menu and clicking <b>Run</b>. Type wf.msc. Click <b>Windows Defender Firewall Properties</b>. Turn the firewall state to 'off' for the Domain, Private, and Public Profile tabs.
 </p>
 
 <br />
