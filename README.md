@@ -22,7 +22,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Within Azure we will create a Windows 10 and Windows Server 2020 virtual machine
+- Within Azure, create a Windows 10 and Windows Server 2020 virtual machine
 - Enable Active Directory Domain Services on the Windows Server virtual machine
 - Join the Windows 10 client machine to the Domain Controller on the Windows Server virtual machine
 - Allow non-administrative users to access remote desktop
