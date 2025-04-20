@@ -95,4 +95,7 @@ Go to the networking tab. Name the vnet active-directory-vnet. Click Review + Cr
 <p>
 <img src="https://imgur.com/LgSVIrH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+<p>
+<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
 <br />
