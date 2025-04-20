@@ -96,7 +96,7 @@ Go to the networking tab. Name the vnet active-directory-vnet. Click Review + Cr
 <img src="https://imgur.com/LgSVIrH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-10. Login to active-directory-client as domain admin user, go to <b>System</b>--><b>Remote Desktop</b>--><b>User Accounts</b>--><b>Select users that can remotely access this PC</b>, and the add 'Domain Users'.
+11. Login to active-directory-client as domain admin user, go to <b>System</b>--><b>Remote Desktop</b>--><b>User Accounts</b>--><b>Select users that can remotely access this PC</b>, and the add 'Domain Users'.
 </p>
 <p>
 <img src="https://imgur.com/PR03uDI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
