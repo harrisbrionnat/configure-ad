@@ -31,7 +31,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 
 <p>
-  <b> Creating Our Virtual Machines</b> 
+  <h3
+    ><b> Creating Our Virtual Machines</b>
+  </h3>
   <br>
   <br>
 1. Set up a Windows Server 2022 virtual machine which will host our domain controller. Within the Azure portal, go to <b>Virtual Machines</b> --> <b>Create</b>--><b>Axure Virtual Machine</b>
