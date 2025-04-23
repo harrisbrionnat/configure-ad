@@ -60,6 +60,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
    <p align="center">
      <img src="https://imgur.com/QNjMygk.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
    </p>
+   <p align="center">
+     <img src="https://imgur.com/F7Gta4p.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+   </p>
 
 10. Join `active-directory-client` to the domain. Log in to that PC and go to **Start** → **System** → **Rename this PC (Advanced)** → **Computer Name**. Join the domain `mydomain.com`. Verify that `active-directory-client` is part of the domain by logging into the domain controller and navigating to **Active Directory Users and Computers** → `mydomain.com` → **Computers**.
     <p align="center">
