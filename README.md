@@ -55,6 +55,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
    - Create a user to put in the `_ADMINS` organizational unit. Right-click the OU and select **New** → **User**.
    - Fill in the user's first name, last name, and domain account name.
    - Add this user to the Domain Admins Security group by right-clicking **Properties** → **Member Of** → **Add**. Enter `Domain Admins`, click **Apply**, then **OK**. Log out and log in as the newly created domain admin.
+   -  - Create four users to put in the `_EMPLOYEES` organizational unit. Right-click the OU and select **New** → **User**.
+   - Fill in the user's first name last name, and domain account name.
    <p align="center">
      <img src="https://imgur.com/QNjMygk.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
    </p>
